@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Raw HTML document inside PUG</title> -->
+    <title>#{title}</title>
+
+    style
+        include ../static/style.css
+
+</head>
+<body>
+    <h3>
+        <!-- |This is a HTML Template rendered through PUG -->
+        
+        <!-- |#{content} -->
+        
+    </h3>
+        
+    <!-- A pipe character (|) is needed to be added before plain text in raw HTML Pug files. -->
+
+    <div id="navbar">
+        <li>
+            <a href="#">Home</a>
+        </li>
+        
+        <li>
+            <a href="#">About</a>
+        </li>
+        
+        <li>
+            <a href="#">Contact Us</a>
+        </li>
+    </div>
+
+    <h1 id="get_membership">
+        |Get Gym Membership only @ 9,999/-
+    </h3>
+
+    <form action="/" id="contact" method="post">
+        <input type="text" name="name"      id="name"   placeholder="Enter your Name">
+        <input type="text" name="age"       id="age"    placeholder="Enter your Age">
+        <input type="text" name="gender"    id="gender" placeholder="Enter your Gender">
+        <textarea name="address" id="address" cols="30" rows="10" placeholder="Enter your address"></textarea>
+        <textarea name="more" id="more" cols="30" rows="10" placeholder="More about you..."></textarea>
+
+        <button type="submit" class="btn">Submit</button>
+    </form>
+        
+
+</body>
+</html>
