@@ -35,7 +35,7 @@ app.post("/", (req, res) => {
     more = form_data.more;
 
     // console.log(typeof req.body);
-    let output = `${name} is ${age} years old, his/her gender is ${gender} & is residing at ${address}. More about him/her  : ${more}`
+    let output = `${name} is ${age} years old, his/her gender is ${gender} & is residing at ${address}. More about him/her : ${more}`
 
     fs.writeFileSync("form_data.txt", output);
 
